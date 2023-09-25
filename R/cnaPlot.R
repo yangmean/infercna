@@ -170,10 +170,11 @@
 #' @export 
 #' @importFrom reshape2 melt
 #' @importFrom ggpubr rotate_x_text rotate_y_text
+#' @importFrom RColorBrewer brewer.pal
 cnaPlot = function(cna,
                    limits = c(-1, 1),
                    ratio = 0.5,
-                   cols = heatCols, 
+                   cols = rev(brewer.pal(11, "RdBu")), 
                    x.name = 'Chromosome',
                    y.name = 'Cell',
                    legend.title = 'Inferred CNA\n[log2 ratio]',
