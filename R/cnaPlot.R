@@ -225,7 +225,7 @@ cnaPlot = function(cna,
     else if (uni.ord) {
         cna = .orderCells(cna,
                           subset.genes = subset.genes,
-                          order.cells = NULL,
+                          order.cells = order.cells,
                           euclid.dist = euclid.dist)
     }
 
